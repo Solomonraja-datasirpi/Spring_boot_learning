@@ -1,6 +1,7 @@
 package com.Crud_Operation.Model_Crud;
 
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 
@@ -14,6 +15,7 @@ public class Model_Crud {
     private int Id;
 
     @Column(name = "Reg_NAME")
+    @Schema(description = "Registered name", example = "Raja")
     private String name;
 
     @Column(name = "Reg_ADDRESS")
