@@ -15,7 +15,6 @@ public class LoggerApplication {
 		SpringApplication.run(LoggerApplication.class, args);
 	}
 
-
 	@GetMapping("/")
 	public String hello()
 	{
